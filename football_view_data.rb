@@ -11,7 +11,7 @@ module VD
   @@fr = FootballRatings.new(@@games)
   @@base_ratings = @@fr.base_ratings
 
-  @@date = '2 April 2010'
+  @@date = 'morning of 4 April 2010'
   def self.date
     @@date
   end

@@ -1,0 +1,19 @@
+%div
+  %span.boldspan
+    home field advantage
+  \=
+  = home_field_advantage
+%div
+  %span.boldspan
+    Ratings
+%div
+  %table
+    %tr
+      %td
+        Home
+      %td
+        Away
+      %td
+        Team
+    - list.each do |item|
+      = item

@@ -1,0 +1,27 @@
+!!! XML
+!!!
+%html
+  %head
+    %meta{ :content => "text/xml; charset=utf-8", "http-equiv" => "content-type" }
+    %title
+      = title
+    %link{ :href => "stylesheet.css", :rel => "stylesheet", :type => "text/css" }
+  %body
+    #main
+      #head
+        %img{ :src => "/images/spacer.gif" }
+        %img{ :src => "/images/football.gif" }
+        %img{ :src => "/images/spacer.gif" }
+        = title
+      %table#bodytable
+        %tr#bodyrow
+          %td#leftcell
+            #left
+              = links
+          %td#rightcell
+            #right
+              .news-title
+                = date
+              = body
+      #foot
+        = title

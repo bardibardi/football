@@ -11,12 +11,13 @@ module VD
   @@fr = FootballRatings.new(@@games)
   @@base_ratings = @@fr.base_ratings
 
-  @@date = 'morning of 5 April 2010'
+  @@view_data = HashData.new('view_data.txt').hash
+  @@date = @@view_data[:date]
   def self.date
     @@date
   end
 
-  @@title = 'Rating Football'
+  @@title = @@view_data[:title]
   def self.title
     @@title
   end

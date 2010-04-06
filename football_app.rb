@@ -1,4 +1,5 @@
 require 'sinatra/base'
+require 'haml'
 # require 'logger'
 
 require 'templates'

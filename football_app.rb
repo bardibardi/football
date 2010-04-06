@@ -6,7 +6,7 @@ require 'table_templates'
 
 class FootballApp < Sinatra::Base
 
-  use Rack::Static, :urls => ['/images']
+  use Rack::Static, :urls => ['/images', '/data']
 
 #  configure do
 #    LOGGER = Logger.new("sinatra.log") 
@@ -24,6 +24,7 @@ class FootballApp < Sinatra::Base
   end
 
   get '/stylesheet.css' do
+    headers["Cache-Control"] = "public, max-age=900"
     content_type 'text/css', :charset => 'utf-8'
     sass :'stylesheet.css' 
   end
@@ -33,22 +34,27 @@ class FootballApp < Sinatra::Base
   end
 
   get '/ratings.html' do
+    headers["Cache-Control"] = "public, max-age=900"
     T.football(T.ratings)
   end
 
   get '/games.html' do
+    headers["Cache-Control"] = "public, max-age=900"
     T.football(T.games)
   end
 
   get '/table.html' do
+    headers["Cache-Control"] = "public, max-age=900"
     T.football(TT.results_table_wrapper)
   end
 
   get '/glossary.html' do
+    headers["Cache-Control"] = "public, max-age=900"
     T.football(T.glossary)
   end
 
   get '/about.html' do
+    headers["Cache-Control"] = "public, max-age=900"
     T.football(T.about)
   end
 

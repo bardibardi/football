@@ -4,7 +4,7 @@ module FootballOdds
 
   def self.draw_weaker_win(stronger_rating, weaker_rating)
     weaker_expectation = weaker_rating.quo(stronger_rating + weaker_rating)
-    draw_factor = 0.75*Math.sqrt(0.5.quo(weaker_expectation))
+    draw_factor = 0.8*Math.sqrt(0.5.quo(weaker_expectation))
     weaker_win = 2.0*weaker_expectation.quo(2.0 + draw_factor)
     [weaker_win*draw_factor, weaker_win]
   end

@@ -1,3 +1,5 @@
+require 'deductions_hash'
+
 class ResultsLineData
 
   attr_accessor :win, :draw, :loss, :for_goals, :against_goals
@@ -26,6 +28,8 @@ class ResultsSummaryData
              away_rld.win + away_rld.draw + away_rld.loss
     @points =  3*(home_rld.win + away_rld.win) +
                home_rld.draw + away_rld.draw
+    deduction = Deductions.hash[team_sym]
+    @points -= deduction.to_i if deduction
     @for_goals = home_rld.for_goals + away_rld.for_goals
     @against_goals = home_rld.against_goals + away_rld.against_goals
     @goal_difference = @for_goals - @against_goals

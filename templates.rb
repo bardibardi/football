@@ -30,6 +30,10 @@ module T
     @@app.haml(:'about.html')
   end
 
+  def self.technical
+    @@app.haml(:'technical.html')
+  end
+
   def self.glossary
     @@app.haml(:'glossary.html')
   end

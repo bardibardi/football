@@ -60,6 +60,11 @@ class FootballApp < Sinatra::Base
     T.football(T.about)
   end
 
+  get '/technical.html' do
+    headers["Cache-Control"] = "public, max-age=900"
+    T.football(T.technical)
+  end
+
 end
 
 

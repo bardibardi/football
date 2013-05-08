@@ -1,3 +1,4 @@
+$: << '.'
 require 'football_app'
 
 # log = File.new("sinatra.log", "a+")

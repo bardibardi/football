@@ -41,7 +41,7 @@ module VD
         r = -1
       elsif a[0] > b[0]
         r = 1
-      elsif
+      else
         r = -1
       end
       r

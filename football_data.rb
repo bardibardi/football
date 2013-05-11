@@ -1,3 +1,4 @@
+require_relative 'config/data'
 class FootballResult
   DATE_FIELD = 0
   HOME_TEAM_FIELD = 1
@@ -12,9 +13,9 @@ class FootballResult
     result = csv_str.chomp.split(',')
     date_str = result[DATE_FIELD]
     if date_str > JULY then
-      date_str = '2009' + date_str
+      date_str = (YEAR_DATA.to_i - 1).to_s + date_str
     else
-      date_str = '2010' + date_str
+      date_str = YEAR_DATA + date_str
     end
     @date = date_str.to_i
     @home_team = result[HOME_TEAM_FIELD].to_sym

@@ -2,7 +2,7 @@ require 'football_data'
 
 module NextGames
 
-  @@next_games = FootballData.new('data/eng2010nextgames.txt').data
+  @@next_games = FootballData.new('data/eng' + YEAR_DATA + 'nextgames.txt').data
 
   def self.array
     @@next_games

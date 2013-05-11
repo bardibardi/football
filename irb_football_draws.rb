@@ -1,3 +1,4 @@
+require_relative 'config/data'
 require 'football_model'
 load 'football_draws.rb'
 
@@ -5,7 +6,7 @@ def l
   load 'irb_football_draws.rb'
 end
 
-FD = FootballData.new 'data/eng2010football.txt'
+FD = FootballData.new 'data/eng' + YEAR_DATA + 'football.txt'
 GAMES = FD.data
 FR = FootballRatings.new GAMES
 RATINGS = FR.calc_ratings

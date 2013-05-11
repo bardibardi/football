@@ -7,6 +7,6 @@ def l
   load 'irb_football_table_view_raw_data.rb'
 end
 
-FD = FootballData.new 'data/eng2010football.txt'
+FD = FootballData.new 'data/eng' + YEAR_DATA + 'football.txt'
 FR = FootballRatings.new FD.data
 TV = FootballTableViewData.new FR.calc_ratings, FR.results

@@ -1,0 +1,20 @@
+ar,Arsenal
+av,Aston Villa
+ch,Chelsea
+ev,Everton
+fu,Fulham
+li,Liverpool
+mc,Manchester City
+mu,Manchester United
+ne,Newcastle
+no,Norwich
+qp,QPR
+re,Reading
+so,Southampton
+st,Stoke
+su,Sunderland
+sw,Swansea
+to,Tottenham
+wb,West Brom
+wi,Wigan
+wh,West Ham

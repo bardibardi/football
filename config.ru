@@ -1,3 +1,8 @@
+# bundle exec rackup -p 4567
+# bundler.io
+require 'rubygems'
+require 'bundler/setup'
+
 $: << '.'
 require 'football_app'
 

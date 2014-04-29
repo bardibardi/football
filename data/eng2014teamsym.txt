@@ -1,0 +1,20 @@
+ar,Arsenal
+av,Aston Villa
+ca,Cardiff
+ch,Chelsea
+cp,Crystal Palace
+ev,Everton
+fu,Fulham
+hu,Hull
+li,Liverpool
+mc,Man City
+mu,Man United
+ne,Newcastle
+no,Norwich
+so,Southampton
+st,Stoke
+su,Sunderland
+sw,Swansea
+to,Tottenham
+wb,West Brom
+wh,West Ham
